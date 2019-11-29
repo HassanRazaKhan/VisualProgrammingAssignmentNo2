@@ -16,5 +16,10 @@ namespace VPassignment2
         {
             InitializeComponent();
         }
+
+        private void Exitbutton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -58,6 +58,7 @@
             this.StudentProfilebutton.TabIndex = 1;
             this.StudentProfilebutton.Text = "Create Student Profile";
             this.StudentProfilebutton.UseVisualStyleBackColor = true;
+            this.StudentProfilebutton.Click += new System.EventHandler(this.StudentProfilebutton_Click);
             // 
             // SearchStudentbutton
             // 
@@ -69,6 +70,7 @@
             this.SearchStudentbutton.TabIndex = 2;
             this.SearchStudentbutton.Text = "Search Student";
             this.SearchStudentbutton.UseVisualStyleBackColor = true;
+            this.SearchStudentbutton.Click += new System.EventHandler(this.SearchStudentbutton_Click);
             // 
             // Top3Studentsbutton
             // 
@@ -91,6 +93,7 @@
             this.DeleteStudentbutton.TabIndex = 4;
             this.DeleteStudentbutton.Text = "Delete Student Record";
             this.DeleteStudentbutton.UseVisualStyleBackColor = true;
+            this.DeleteStudentbutton.Click += new System.EventHandler(this.DeleteStudentbutton_Click);
             // 
             // MarkAttendancebutton
             // 
@@ -123,6 +126,7 @@
             this.Exitbutton.TabIndex = 7;
             this.Exitbutton.Text = "Exit";
             this.Exitbutton.UseVisualStyleBackColor = true;
+            this.Exitbutton.Click += new System.EventHandler(this.Exitbutton_Click);
             // 
             // MainForm
             // 

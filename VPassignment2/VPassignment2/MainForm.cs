@@ -17,6 +17,30 @@ namespace VPassignment2
             InitializeComponent();
         }
 
-     
+        private void StudentProfilebutton_Click(object sender, EventArgs e)
+        {
+            StudentProfile sf = new StudentProfile();
+            this.Hide();
+            sf.Show();
+        }
+
+        private void SearchStudentbutton_Click(object sender, EventArgs e)
+        {
+            SearchStudent ss = new SearchStudent();
+            this.Hide();
+            ss.Show();
+        }
+
+        private void DeleteStudentbutton_Click(object sender, EventArgs e)
+        {
+            DeleteStudent ds = new DeleteStudent();
+            this.Hide();
+            ds.Show();
+        }
+
+        private void Exitbutton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

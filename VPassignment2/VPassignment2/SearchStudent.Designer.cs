@@ -32,11 +32,12 @@
             this.SearchtextBox = new System.Windows.Forms.TextBox();
             this.SearchByIDradioButton = new System.Windows.Forms.RadioButton();
             this.SearchByNameradioButton = new System.Windows.Forms.RadioButton();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.AllStudentsradioButton = new System.Windows.Forms.RadioButton();
             this.GotoMenubutton = new System.Windows.Forms.Button();
             this.Exitbutton = new System.Windows.Forms.Button();
             this.Searchbutton = new System.Windows.Forms.Button();
+            this.SearchdataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,16 +82,6 @@
             this.SearchByNameradioButton.Text = "Search By Name";
             this.SearchByNameradioButton.UseVisualStyleBackColor = true;
             // 
-            // listBox1
-            // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 24;
-            this.listBox1.Location = new System.Drawing.Point(61, 196);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(687, 196);
-            this.listBox1.TabIndex = 4;
-            // 
             // AllStudentsradioButton
             // 
             this.AllStudentsradioButton.AutoSize = true;
@@ -102,6 +93,7 @@
             this.AllStudentsradioButton.TabStop = true;
             this.AllStudentsradioButton.Text = "Show All Students";
             this.AllStudentsradioButton.UseVisualStyleBackColor = true;
+            this.AllStudentsradioButton.CheckedChanged += new System.EventHandler(this.AllStudentsradioButton_CheckedChanged);
             // 
             // GotoMenubutton
             // 
@@ -112,6 +104,7 @@
             this.GotoMenubutton.TabIndex = 15;
             this.GotoMenubutton.Text = "Main Menu";
             this.GotoMenubutton.UseVisualStyleBackColor = true;
+            this.GotoMenubutton.Click += new System.EventHandler(this.GotoMenubutton_Click);
             // 
             // Exitbutton
             // 
@@ -122,6 +115,7 @@
             this.Exitbutton.TabIndex = 14;
             this.Exitbutton.Text = "Exit";
             this.Exitbutton.UseVisualStyleBackColor = true;
+            this.Exitbutton.Click += new System.EventHandler(this.Exitbutton_Click);
             // 
             // Searchbutton
             // 
@@ -132,23 +126,34 @@
             this.Searchbutton.TabIndex = 16;
             this.Searchbutton.Text = "Search";
             this.Searchbutton.UseVisualStyleBackColor = true;
+            this.Searchbutton.Click += new System.EventHandler(this.Searchbutton_Click);
+            // 
+            // SearchdataGridView
+            // 
+            this.SearchdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SearchdataGridView.Location = new System.Drawing.Point(92, 211);
+            this.SearchdataGridView.Name = "SearchdataGridView";
+            this.SearchdataGridView.Size = new System.Drawing.Size(647, 164);
+            this.SearchdataGridView.TabIndex = 17;
             // 
             // SearchStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.SearchdataGridView);
             this.Controls.Add(this.Searchbutton);
             this.Controls.Add(this.GotoMenubutton);
             this.Controls.Add(this.Exitbutton);
             this.Controls.Add(this.AllStudentsradioButton);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.SearchByNameradioButton);
             this.Controls.Add(this.SearchByIDradioButton);
             this.Controls.Add(this.SearchtextBox);
             this.Controls.Add(this.label1);
             this.Name = "SearchStudent";
             this.Text = "SearchStudent";
+            this.Load += new System.EventHandler(this.SearchStudent_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.SearchdataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,10 +165,10 @@
         private System.Windows.Forms.TextBox SearchtextBox;
         private System.Windows.Forms.RadioButton SearchByIDradioButton;
         private System.Windows.Forms.RadioButton SearchByNameradioButton;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.RadioButton AllStudentsradioButton;
         private System.Windows.Forms.Button GotoMenubutton;
         private System.Windows.Forms.Button Exitbutton;
         private System.Windows.Forms.Button Searchbutton;
+        private System.Windows.Forms.DataGridView SearchdataGridView;
     }
 }

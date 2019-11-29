@@ -173,6 +173,7 @@
             this.GotoMenubutton.TabIndex = 13;
             this.GotoMenubutton.Text = "Main Menu";
             this.GotoMenubutton.UseVisualStyleBackColor = true;
+            this.GotoMenubutton.Click += new System.EventHandler(this.GotoMenubutton_Click);
             // 
             // SaveButton
             // 
@@ -183,6 +184,7 @@
             this.SaveButton.TabIndex = 14;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // Addmorebutton
             // 
@@ -193,6 +195,7 @@
             this.Addmorebutton.TabIndex = 15;
             this.Addmorebutton.Text = "Add More";
             this.Addmorebutton.UseVisualStyleBackColor = true;
+            this.Addmorebutton.Click += new System.EventHandler(this.Addmorebutton_Click);
             // 
             // StudentProfile
             // 

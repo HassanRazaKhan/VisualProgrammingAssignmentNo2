@@ -28,30 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.DeletetextBox = new System.Windows.Forms.TextBox();
             this.GotoMenubutton = new System.Windows.Forms.Button();
             this.Exitbutton = new System.Windows.Forms.Button();
             this.Deletebutton = new System.Windows.Forms.Button();
+            this.DeletedataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DeletedataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(245, 173);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID";
-            // 
-            // DeletetextBox
-            // 
-            this.DeletetextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeletetextBox.Location = new System.Drawing.Point(347, 168);
-            this.DeletetextBox.Name = "DeletetextBox";
-            this.DeletetextBox.Size = new System.Drawing.Size(224, 29);
-            this.DeletetextBox.TabIndex = 1;
             // 
             // GotoMenubutton
             // 
@@ -62,6 +44,7 @@
             this.GotoMenubutton.TabIndex = 15;
             this.GotoMenubutton.Text = "Main Menu";
             this.GotoMenubutton.UseVisualStyleBackColor = true;
+            this.GotoMenubutton.Click += new System.EventHandler(this.GotoMenubutton_Click);
             // 
             // Exitbutton
             // 
@@ -72,6 +55,7 @@
             this.Exitbutton.TabIndex = 14;
             this.Exitbutton.Text = "Exit";
             this.Exitbutton.UseVisualStyleBackColor = true;
+            this.Exitbutton.Click += new System.EventHandler(this.Exitbutton_Click);
             // 
             // Deletebutton
             // 
@@ -82,30 +66,37 @@
             this.Deletebutton.TabIndex = 16;
             this.Deletebutton.Text = "Delete";
             this.Deletebutton.UseVisualStyleBackColor = true;
+            this.Deletebutton.Click += new System.EventHandler(this.Deletebutton_Click);
+            // 
+            // DeletedataGridView
+            // 
+            this.DeletedataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DeletedataGridView.Location = new System.Drawing.Point(58, 84);
+            this.DeletedataGridView.Name = "DeletedataGridView";
+            this.DeletedataGridView.Size = new System.Drawing.Size(674, 150);
+            this.DeletedataGridView.TabIndex = 17;
             // 
             // DeleteStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.DeletedataGridView);
             this.Controls.Add(this.Deletebutton);
             this.Controls.Add(this.GotoMenubutton);
             this.Controls.Add(this.Exitbutton);
-            this.Controls.Add(this.DeletetextBox);
-            this.Controls.Add(this.label1);
             this.Name = "DeleteStudent";
             this.Text = "DeleteStudent";
+            this.Load += new System.EventHandler(this.DeleteStudent_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DeletedataGridView)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox DeletetextBox;
         private System.Windows.Forms.Button GotoMenubutton;
         private System.Windows.Forms.Button Exitbutton;
         private System.Windows.Forms.Button Deletebutton;
+        private System.Windows.Forms.DataGridView DeletedataGridView;
     }
 }

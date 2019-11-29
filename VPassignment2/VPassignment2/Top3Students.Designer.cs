@@ -53,6 +53,7 @@
             this.Exitbutton.TabIndex = 16;
             this.Exitbutton.Text = "Exit";
             this.Exitbutton.UseVisualStyleBackColor = true;
+            this.Exitbutton.Click += new System.EventHandler(this.Exitbutton_Click);
             // 
             // TopStudentsbutton
             // 
