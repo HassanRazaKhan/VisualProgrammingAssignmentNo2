@@ -42,5 +42,19 @@ namespace VPassignment2
         {
             Application.Exit();
         }
+
+        private void MarkAttendancebutton_Click(object sender, EventArgs e)
+        {
+            MarkAttendance ma = new MarkAttendance();
+            this.Hide();
+            ma.Show();
+        }
+
+        private void ViewAttendancebutton_Click(object sender, EventArgs e)
+        {
+            ViewAttendance va = new ViewAttendance();
+            this.Hide();
+            va.Show();
+        }
     }
 }

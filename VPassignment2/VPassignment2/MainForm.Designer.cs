@@ -105,6 +105,7 @@
             this.MarkAttendancebutton.TabIndex = 5;
             this.MarkAttendancebutton.Text = "Mark Attendance";
             this.MarkAttendancebutton.UseVisualStyleBackColor = true;
+            this.MarkAttendancebutton.Click += new System.EventHandler(this.MarkAttendancebutton_Click);
             // 
             // ViewAttendancebutton
             // 
@@ -116,6 +117,7 @@
             this.ViewAttendancebutton.TabIndex = 6;
             this.ViewAttendancebutton.Text = "View Attendance";
             this.ViewAttendancebutton.UseVisualStyleBackColor = true;
+            this.ViewAttendancebutton.Click += new System.EventHandler(this.ViewAttendancebutton_Click);
             // 
             // Exitbutton
             // 

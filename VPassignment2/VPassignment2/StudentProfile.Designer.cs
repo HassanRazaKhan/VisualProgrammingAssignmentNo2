@@ -50,7 +50,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(90, 61);
+            this.label1.Location = new System.Drawing.Point(90, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 24);
             this.label1.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(90, 262);
+            this.label.Location = new System.Drawing.Point(90, 264);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(98, 24);
             this.label.TabIndex = 1;
@@ -90,7 +90,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(421, 61);
+            this.label5.Location = new System.Drawing.Point(421, 62);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 24);
             this.label5.TabIndex = 4;
@@ -100,7 +100,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(421, 257);
+            this.label6.Location = new System.Drawing.Point(421, 264);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 24);
             this.label6.TabIndex = 5;
@@ -109,7 +109,7 @@
             // IDtextBox
             // 
             this.IDtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IDtextBox.Location = new System.Drawing.Point(207, 56);
+            this.IDtextBox.Location = new System.Drawing.Point(207, 59);
             this.IDtextBox.Name = "IDtextBox";
             this.IDtextBox.Size = new System.Drawing.Size(167, 29);
             this.IDtextBox.TabIndex = 6;
@@ -117,7 +117,7 @@
             // NametextBox
             // 
             this.NametextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NametextBox.Location = new System.Drawing.Point(207, 154);
+            this.NametextBox.Location = new System.Drawing.Point(207, 152);
             this.NametextBox.Name = "NametextBox";
             this.NametextBox.Size = new System.Drawing.Size(167, 29);
             this.NametextBox.TabIndex = 7;
@@ -133,7 +133,7 @@
             // UniversitytextBox
             // 
             this.UniversitytextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UniversitytextBox.Location = new System.Drawing.Point(560, 254);
+            this.UniversitytextBox.Location = new System.Drawing.Point(560, 259);
             this.UniversitytextBox.Name = "UniversitytextBox";
             this.UniversitytextBox.Size = new System.Drawing.Size(167, 29);
             this.UniversitytextBox.TabIndex = 9;
@@ -149,7 +149,7 @@
             // CGPAtextBox
             // 
             this.CGPAtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CGPAtextBox.Location = new System.Drawing.Point(560, 56);
+            this.CGPAtextBox.Location = new System.Drawing.Point(560, 57);
             this.CGPAtextBox.Name = "CGPAtextBox";
             this.CGPAtextBox.Size = new System.Drawing.Size(167, 29);
             this.CGPAtextBox.TabIndex = 11;
@@ -195,7 +195,6 @@
             this.Addmorebutton.TabIndex = 15;
             this.Addmorebutton.Text = "Add More";
             this.Addmorebutton.UseVisualStyleBackColor = true;
-            this.Addmorebutton.Click += new System.EventHandler(this.Addmorebutton_Click);
             // 
             // StudentProfile
             // 

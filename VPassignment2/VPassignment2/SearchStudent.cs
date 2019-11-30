@@ -22,10 +22,11 @@ namespace VPassignment2
         private void Searchbutton_Click(object sender, EventArgs e)
         {
 
-            if(SearchByIDradioButton.Checked)
+           
+            if (SearchByIDradioButton.Checked)
             {
                 search = SearchtextBox.Text;
-                if(search == StudentProfile.ID)
+                if (search == StudentProfile.ID)
                 {
 
                     table.Rows.Add(StudentProfile.ID, StudentProfile.name, StudentProfile.semester, StudentProfile.CGPA, StudentProfile.department, StudentProfile.university);
@@ -35,6 +36,7 @@ namespace VPassignment2
                 {
                     MessageBox.Show("Invalid Search, Try Again!");
                 }
+
             }
             else if(SearchByNameradioButton.Checked)
             {
