@@ -26,6 +26,8 @@ namespace VPassignment2
             if (SearchByIDradioButton.Checked)
             {
                 search = SearchtextBox.Text;
+
+
                 if (search == StudentProfile.ID)
                 {
 

@@ -195,6 +195,7 @@
             this.Addmorebutton.TabIndex = 15;
             this.Addmorebutton.Text = "Add More";
             this.Addmorebutton.UseVisualStyleBackColor = true;
+            this.Addmorebutton.Click += new System.EventHandler(this.Addmorebutton_Click_1);
             // 
             // StudentProfile
             // 
